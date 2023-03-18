@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="main">
+
+        <form action="" name="form">
+            <input type="text" name="textview" class="textview" >
+        </form>
+        <div class="clearfix">
+            <div class="clean"><input type="button" value="C" class="btn" onclick="clean()"></div>
+            <!-- <div class="col-3"><input type="button" value="&#8756;" class="btn"></div> -->
+            <div class="back"><input type="button" value="Del" class="btn" onclick="back()"></div>
+            <div class="div"><input type="button" value="&#247;" class="btn" onclick="insert('/');"></div>
+        </div>
+        <div class="clearfix">
+            <div class="seven"><input type="button" value="7" class="btn" onclick="insert(7);"></div>
+            <div class="eight"><input type="button" value="8" class="btn" onclick="insert(8);"></div>
+            <div class="nine"><input type="button" value="9" class="btn" onclick="insert(9);"></div>
+            <div class="multi"><input type="button" value="&#215;" class="btn"onclick="insert('*');"></div>
+        </div>
+        <div class="clearfix">
+            <div class="four"><input type="button" value="4" class="btn"onclick="insert(4);"></div>
+            <div class="five"><input type="button" value="5" class="btn"onclick="insert(5);"></div>
+            <div class="six"><input type="button" value="6" class="btn"onclick="insert(6);"></div>
+            <div class="minas"><input type="button" value="&#8722;" class="btn"onclick="insert('-');"></div>
+        </div>
+        <div class="clearfix">
+                <div class="one"><input type="button" value="1" class="btn"onclick="insert(1);"></div>
+                <div class="two"><input type="button" value="2" class="btn"onclick="insert(2);"></div>
+                <div class="three"><input type="button" value="3" class="btn"onclick="insert(3);"></div>
+                <div class="plus"><input type="button" value="&#43;" class="btn"onclick="insert('+');"></div>
+        </div>
+        <div class="clearfix">
+                <div class="point"><input type="button" value="." class="btn"onclick="insert('.');"></div>
+                <div class="zero"><input type="button" value="0" class="btn"onclick="insert(0);"></div>
+                <div class="equal"><input type="button" value="&#61;" id="equal" class="btn"onclick= "equal()"></div>
+              
+        </div>
+
+    </div>
+    <script src="calculator.js" ></script>
+    
+</body>
+</html>
